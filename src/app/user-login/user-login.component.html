@@ -1,0 +1,28 @@
+<mat-toolbar class="justify-content-between" color="primary">
+    <img src="images/techkraft-logo.png" alt="TechKraft Logo" class="logo">
+    <mat-icon>contact_support</mat-icon>
+</mat-toolbar>
+<div class="d-flex align-items-center justify-content-center">
+    <div
+        class="container-sm jumbotron d-flex flex-column shadow-lg p-3 bg-body rounded p-4 m-4 d-flex align-content-center">
+        <h2>Payment Portal Login</h2>
+        <div class="d-flex flex-column shadow-lg p-3 bg-body rounded p-4 m-4 d-flex align-content-center"
+            [formGroup]="loginForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input formControlName="username" matInput>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Select Roles</mat-label>
+                <mat-select formControlName="role">
+                    @for (appRole of appRoles; track appRole) {
+                    <mat-option [value]="appRole">{{appRole | titlecase }}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+            <button matButton="filled" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "companyDetails": {
+      "companyName": "Himalayan Traders Pvt. Ltd.",
+      "categoryCode": "RETAIL",
+      "businessWebsite": "https://himalayantraders.example",
+      "panNumber": "123456789"
+    },
+    "contactDetails": {
+      "email": "info@himalayantraders.example",
+      "phone": "9800000001"
+    },
+    "bankDetails": {
+      "bankName": "Nabil Bank",
+      "accountHolderName": "Himalayan Traders Pvt. Ltd.",
+      "accountNumber": "XXXXXXXX1234",
+      "cardNumber": "4111111111111111"
+    },
+    "createdDate": "2026-01-15T10:30:00Z",
+    "permitted": true,
+    "risk": "LOW"
+  },
+  {
+    "id": 2,
+    "companyDetails": {
+      "companyName": "Everest Digital Solutions",
+      "categoryCode": "IT_SERVICES",
+      "businessWebsite": "https://everestdigital.example",
+      "panNumber": "234567891"
+    },
+    "contactDetails": {
+      "email": "contact@everestdigital.example",
+      "phone": "9800000002"
+    },
+    "bankDetails": {
+      "bankName": "Global IME Bank",
+      "accountHolderName": "Everest Digital Solutions",
+      "accountNumber": "XXXXXXXX2345",
+      "cardNumber": "5555555555554444"
+    },
+    "createdDate": "2026-02-03T08:45:00Z",
+    "permitted": false,
+    "risk": "HIGH"
+  },
+  {
+    "id": 3,
+    "companyDetails": {
+      "companyName": "Kathmandu Fashion House",
+      "categoryCode": "FASHION",
+      "businessWebsite": "https://ktmfashion.example",
+      "panNumber": "345678912"
+    },
+    "contactDetails": {
+      "email": "sales@ktmfashion.example",
+      "phone": "9800000003"
+    },
+    "bankDetails": {
+      "bankName": "NIC Asia Bank",
+      "accountHolderName": "Kathmandu Fashion House",
+      "accountNumber": "XXXXXXXX3456",
+      "cardNumber": "4111111111111111"
+    },
+    "createdDate": "2026-03-12T12:20:00Z",
+    "permitted": true,
+    "risk": "MEDIUM"
+  },
+  {
+    "id": 4,
+    "companyDetails": {
+      "companyName": "Pokhara Organic Foods",
+      "categoryCode": "FOOD",
+      "businessWebsite": "https://pokharaorganic.example",
+      "panNumber": "456789123"
+    },
+    "contactDetails": {
+      "email": "hello@pokharaorganic.example",
+      "phone": "9800000004"
+    },
+    "bankDetails": {
+      "bankName": "Siddhartha Bank",
+      "accountHolderName": "Pokhara Organic Foods",
+      "accountNumber": "XXXXXXXX4567",
+      "cardNumber": "5555555555554444"
+    },
+    "createdDate": "2026-04-08T09:15:00Z",
+    "permitted": true,
+    "risk": "LOW"
+  },
+  {
+    "id": 5,
+    "companyDetails": {
+      "companyName": "Nepal Tech Mart",
+      "categoryCode": "ELECTRONICS",
+      "businessWebsite": "https://nepaltechmart.example",
+      "panNumber": "567891234"
+    },
+    "contactDetails": {
+      "email": "support@nepaltechmart.example",
+      "phone": "9800000005"
+    },
+    "bankDetails": {
+      "bankName": "Prabhu Bank",
+      "accountHolderName": "Nepal Tech Mart",
+      "accountNumber": "XXXXXXXX5678",
+      "cardNumber": "4111111111111111"
+    },
+    "createdDate": "2026-05-19T15:40:00Z",
+    "permitted": false,
+    "risk": "MEDIUM"
+  },
+  {
+    "id": 6,
+    "companyDetails": {
+      "companyName": "Lumbini Travel Services",
+      "categoryCode": "TRAVEL",
+      "businessWebsite": "https://lumbinitravel.example",
+      "panNumber": "678912345"
+    },
+    "contactDetails": {
+      "email": "booking@lumbinitravel.example",
+      "phone": "9800000006"
+    },
+    "bankDetails": {
+      "bankName": "Everest Bank",
+      "accountHolderName": "Lumbini Travel Services",
+      "accountNumber": "XXXXXXXX6789",
+      "cardNumber": "5555555555554444"
+    },
+    "createdDate": "2026-06-11T11:10:00Z",
+    "permitted": true,
+    "risk": "HIGH"
+  },
+  {
+    "id": 7,
+    "companyDetails": {
+      "companyName": "Bhaktapur Handicrafts",
+      "categoryCode": "HANDICRAFTS",
+      "businessWebsite": "https://bhaktapurcrafts.example",
+      "panNumber": "789123456"
+    },
+    "contactDetails": {
+      "email": "info@bhaktapurcrafts.example",
+      "phone": "9800000007"
+    },
+    "bankDetails": {
+      "bankName": "Sanima Bank",
+      "accountHolderName": "Bhaktapur Handicrafts",
+      "accountNumber": "XXXXXXXX7890",
+      "cardNumber": "4111111111111111"
+    },
+    "createdDate": "2026-07-02T13:25:00Z",
+    "permitted": true,
+    "risk": "LOW"
+  },
+  {
+    "id": 8,
+    "companyDetails": {
+      "companyName": "Green Valley Construction",
+      "categoryCode": "CONSTRUCTION",
+      "businessWebsite": "https://greenvalley.example",
+      "panNumber": "891234567"
+    },
+    "contactDetails": {
+      "email": "admin@greenvalley.example",
+      "phone": "9800000008"
+    },
+    "bankDetails": {
+      "bankName": "Kumari Bank",
+      "accountHolderName": "Green Valley Construction",
+      "accountNumber": "XXXXXXXX8901",
+      "cardNumber": "5555555555554444"
+    },
+    "createdDate": "2026-08-14T07:50:00Z",
+    "permitted": false,
+    "risk": "HIGH"
+  },
+  {
+    "id": 9,
+    "companyDetails": {
+      "companyName": "Terai Agro Products",
+      "categoryCode": "AGRICULTURE",
+      "businessWebsite": "https://teraiagro.example",
+      "panNumber": "912345678"
+    },
+    "contactDetails": {
+      "email": "sales@teraiagro.example",
+      "phone": "9800000009"
+    },
+    "bankDetails": {
+      "bankName": "Agricultural Development Bank",
+      "accountHolderName": "Terai Agro Products",
+      "accountNumber": "XXXXXXXX9012",
+      "cardNumber": "4111111111111111"
+    },
+    "createdDate": "2026-09-05T16:05:00Z",
+    "permitted": true,
+    "risk": "MEDIUM"
+  },
+  {
+    "id": 10,
+    "companyDetails": {
+      "companyName": "Mountain View Hospitality",
+      "categoryCode": "HOSPITALITY",
+      "businessWebsite": "https://mountainview.example",
+      "panNumber": "102345678"
+    },
+    "contactDetails": {
+      "email": "reservations@mountainview.example",
+      "phone": "9800000010"
+    },
+    "bankDetails": {
+      "bankName": "Laxmi Sunrise Bank",
+      "accountHolderName": "Mountain View Hospitality",
+      "accountNumber": "XXXXXXXX0123",
+      "cardNumber": "4111111111111111"
+    },
+    "createdDate": "2026-10-22T10:00:00Z",
+    "permitted": true,
+    "risk": "LOW"
+  }
+]

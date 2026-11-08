@@ -1,0 +1,41 @@
+<mat-sidenav-container class="sidenav-container" color="primary">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      @if(opened){
+      <img (click)="drawer.toggle(); opened=!opened;" src="images/techkraft-logo.png" alt="TechKraft Logo" class="logo">
+      }
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">Dashboard</a>
+      @if (isSales) {
+      <a mat-list-item routerLink="/merchant-form">Add Merchant</a>
+      }
+      @if (isAdmin) {
+      <a mat-list-item routerLink="">Add User</a>
+      }
+      @if (isReviewer) {
+      <a mat-list-item routerLink="">Reviewer</a>
+      }
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      @if (isHandset$ | async) {
+      <button type="button" aria-label="Toggle sidenav" matIconButton (click)="drawer.toggle(); opened=!opened;">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      }
+      @if(!opened){
+      <img (click)="drawer.toggle(); opened=!opened;" src="images/techkraft-logo.png" alt="TechKraft Logo" class="logo">
+      }
+      <label class="ms-auto me-2">{{ userRole }} : {{ userName }}</label>
+      <button matButton="outlined" (click)="logout()">Logout</button>
+    </mat-toolbar>
+    <div class="overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

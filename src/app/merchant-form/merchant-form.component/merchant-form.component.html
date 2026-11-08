@@ -1,0 +1,47 @@
+<div>
+  <h1>Add Merchant</h1>
+</div>
+<div id="registration" class="conatiner col-md-12">
+  <form id="regForm" [formGroup]="registrationForm!">
+    <mat-horizontal-stepper #stepper linear>
+      <mat-step [stepControl]="registrationForm.get('companyDetails')!">
+        <ng-template matStepLabel>Enter Company Details</ng-template>
+        <app-merchant-form-step-1 formGroupName="companyDetails"></app-merchant-form-step-1>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step [stepControl]="registrationForm.get('contactDetails')!">
+        <ng-template matStepLabel>Enter Contact Details</ng-template>
+        <app-merchant-form-step-2 formGroupName="contactDetails"></app-merchant-form-step-2>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step [stepControl]="registrationForm.get('bankDetails')!">
+        <ng-template matStepLabel>Enter Bank Details</ng-template>
+        <app-merchant-form-step-3 formGroupName="bankDetails"></app-merchant-form-step-3>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Confirm Details</ng-template>
+        <app-merchant-form-step-4></app-merchant-form-step-4>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton (click)="submitForm()">{{ isEditMode() ? 'Update Merchant' : 'Create
+            Merchant' }}</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </form>
+  @if (formSubmitted){
+  <div>
+    <h4>Details submitted successfully</h4>
+  </div>
+  }
+</div>

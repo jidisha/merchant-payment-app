@@ -1,0 +1,25 @@
+<!-- @if(registrationForm){
+
+} -->
+
+<div matInput class="d-flex flex-column">
+    <mat-form-field appearance="fill">
+        <mat-label>Bank Name</mat-label>
+        <input formControlName="bankName" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Account Holder Name</mat-label>
+        <input formControlName="accountHolderName" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Account Number</mat-label>
+        <input formControlName="accountNumber" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Card Number</mat-label>
+        <input [appCardNumberValidator]="true" formControlName="cardNumber" matInput>
+    </mat-form-field>
+
+</div>

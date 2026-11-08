@@ -1,0 +1,25 @@
+<div>
+    <h4>Following details submitted, please confirm and hit submit</h4>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Field</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Company Details</td>
+                <td>{{registrationForm.get('companyDetails')?.get('companyName')?.value}}</td>
+            </tr>
+            <tr>
+                <td>Contact Details</td>
+                <td>{{registrationForm.get('contactDetails')?.get('email')?.value}}</td>
+            </tr>
+            <tr>
+                <td>Bank Details</td>
+                <td>{{registrationForm.get('bankDetails')?.get('accountNumber')?.value}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
